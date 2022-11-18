@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="dauvao">
+    <select id="select1">
+        <option value="bien1">VND</option>
+        <option value="2">USD</option>
+    </select>
+    <select id="select2">
+        <option value="bien1">VND</option>
+        <option value="2">USD</option>
+    </select>
+        <button onclick="lick()">Convert</button>
+    <script>
+    function lick() {
+        let giatrivao= document.getElementById('dauvao').value;
+        let select1 =document.getElementById('select1').value;
+        let select2 =document.getElementById('select2').value;
+        if(select1 == select2){
+            alert(giatrivao);
+        }
+        if(select1 == "bien1" && select2 =="2"){
+            alert(giatrivao/24000);
+        }
+
+    }
+    
+    </script>
+</body>
+</html>
