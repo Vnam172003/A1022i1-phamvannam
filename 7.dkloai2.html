@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a=+prompt("nhập a");
+    let b=+prompt("nhập b");
+    let c=+prompt("nhập c");
+    let S=(b*b + 4*a*c);
+    if(S==0){
+        x1=-b/(2*a);
+        x2=-b/(2*a);
+        document.write("phương trình có nghiệm kép"+x1+x2);
+
+    }
+    else if(S>0){
+        x1=(-b+Math.sqrt(S))/(2*a);
+        x2=(-b-Math.sqrt(S))/(2*a);
+        document.write('Phương trình có 2 nghiệm phân biệt là :' + x1 + ' và ' + x2);
+    }
+    else {
+        document.write("phương trình vô nghiệm");
+    }
+
+</script>
+</html>
