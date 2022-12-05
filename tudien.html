@@ -1,10 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 </head>
 <body>
-$END$
+<h3> <i> Dictionary </i></h3>
+<input type="text" id="originalTxt" />
+<input type="button" onclick="translateClick()" value="Dịch" />
+<p id="result"></p>
 </body>
+<script>
+    let arrayVietnam = ["Bò", "Heo", "Gà", "Chó", "Cá", "Lợn", "Trâu"];
+    let arrayEnglish = ["Cow", "Pig", "Chicken", "Dog", "Fish", "Pig", "Buffalow"];
+
+
+    function translateClick() {
+        let fromTxt = document.getElementById("originalTxt").value;
+
+        let i = arrayVietnam.indexOf(fromTxt)
+        document.getElementById("result").innerHTML = arrayEnglish[i];
+
+    }
+
+</script>
 </html>

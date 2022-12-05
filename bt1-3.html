@@ -2,9 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+
 </body>
+<script>
+    let array=[0];
+    let s=0;
+    let tb=0;
+    let n=+prompt("nhập số phần tử của mảng");
+    for(i=0;i<array.length;i++){
+        array[i]= +prompt("nhập giá trị của mảng"+i);
+        s+=array[i]
+    }
+    tb=s/n;
+    document.write("giá trị trung bình của mảng"+tb);
+</script>
 </html>

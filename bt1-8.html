@@ -2,9 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+
 </body>
+<script>
+    let array = [];
+    for (let i = 0; i < 10 ; i++) {
+        array[i] = +prompt("Nhập vào phần thứ " + i);
+    }
+    array.sort((a, b) => b - a);
+    document.write(array);
+</script>
 </html>

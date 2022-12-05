@@ -2,9 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+
 </body>
+<script>
+    let a = [];
+    let b =[];
+    for (let i = 0; i < 10 ; i++) {
+        a[i] = +prompt("Nhập vào phần tử thứ " + i);
+    }
+    document.write("Mảng a: " + a + "<br/>");
+    for (let i = 0; i < 10 ; i++) {
+        b[i] = +prompt("Nhập vào phần tử thứ " + i);
+    }
+    document.write("Mảng b: " + b + "<br/>");
+    let c = a.concat(b);
+    document.write("Mảng c - nối 2 mảng a và b là: " + c);
+</script>
 </html>

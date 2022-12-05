@@ -2,9 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+
 </body>
+<script>
+    let array = []
+    let count = 0
+    for (let i = 0; i < 5; i++) {
+        array[i] = +prompt('Nhập số vào đây')
+        if (array[i] < 0) {
+            count ++
+        }
+    } document.write('Có ' + count + ' số nguyên âm')
+</script>
 </html>

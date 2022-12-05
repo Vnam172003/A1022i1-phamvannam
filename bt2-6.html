@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+
 </body>
+<script>
+    let array = [];
+    let a = +prompt("Nhập độ dài chuỗi kí tự");
+    for (let i = 0; i < a ; i++) {
+        array[i] = prompt("Nhập ký tự");
+    }
+    for (let i = 0; i < array.length ; i++) {
+        if(array[i] === "-"){
+            array[i] = "_";
+        }
+    }
+    document.write(array.join(""));
+</script>
 </html>

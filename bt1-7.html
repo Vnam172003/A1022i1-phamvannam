@@ -2,9 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+
 </body>
+<script>
+    let arr=[];
+    for(i=0;i<10;i++){
+        arr[i]= +prompt("Nhập giá trị phần tử thứ "+i);
+    }
+    let v=+prompt("nhap gia tri v");
+    let c=arr.indexOf(v);
+    if(arr.includes(v)){
+        arr.splice(c,1);
+        arr.push(0);}
+    document.write(arr);
+</script>
 </html>
